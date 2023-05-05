@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Online Store</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Online Store</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#cart">Cart</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+      <h2>Home</h2>
+      <p>Welcome to our online store! Browse through our wide selection of products and services.</p>
+    </section>
+    <section id="products">
+      <h2>Products</h2>
+      <ul>
+        <li>
+          <img src="product1.jpg" alt="Product 1">
+          <h3>Product 1</h3>
+          <p>Description of Product 1</p>
+          <p>Price: $19.99</p>
+          <button onclick="addToCart(1)">Add to Cart</button>
+        </li>
+        <li>
+          <img src="product2.jpg" alt="Product 2">
+          <h3>Product 2</h3>
+          <p>Description of Product 2</p>
+          <p>Price: $29.99</p>
+          <button onclick="addToCart(2)">Add to Cart</button>
+        </li>
+        <li>
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Description of Product 1</p>
+            <p>Price: $19.99</p>
+            <button onclick="addToCart(1)">Add to Cart</button>
+          </li>
+          <li>
+            <img src="product2.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Description of Product 2</p>
+            <p>Price: $29.99</p>
+            <button onclick="addToCart(2)">Add to Cart</button>
+          </li>
+          <li>
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Description of Product 1</p>
+            <p>Price: $19.99</p>
+            <button onclick="addToCart(1)">Add to Cart</button>
+          </li>
+          <li>
+            <img src="product2.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Description of Product 2</p>
+            <p>Price: $29.99</p>
+            <button onclick="addToCart(2)">Add to Cart</button>
+          </li>
+          <li>
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Description of Product 1</p>
+            <p>Price: $19.99</p>
+            <button onclick="addToCart(1)">Add to Cart</button>
+          </li>
+          <li>
+            <img src="product2.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Description of Product 2</p>
+            <p>Price: $29.99</p>
+            <button onclick="addToCart(2)">Add to Cart</button>
+          </li>
+          <li>
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Description of Product 1</p>
+            <p>Price: $19.99</p>
+            <button onclick="addToCart(1)">Add to Cart</button>
+          </li>
+          <li>
+            <img src="product2.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Description of Product 2</p>
+            <p>Price: $29.99</p>
+            <button onclick="addToCart(2)">Add to Cart</button>
+          </li>
+          <li>
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Description of Product 1</p>
+            <p>Price: $19.99</p>
+            <button onclick="addToCart(1)">Add to Cart</button>
+          </li>
+          <li>
+            <img src="product2.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Description of Product 2</p>
+            <p>Price: $29.99</p>
+            <button onclick="addToCart(2)">Add to Cart</button>
+          </li>
+          <li>
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Description of Product 1</p>
+            <p>Price: $19.99</p>
+            <button onclick="addToCart(1)">Add to Cart</button>
+          </li>
+          <li>
+            <img src="product2.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Description of Product 2</p>
+            <p>Price: $29.99</p>
+            <button onclick="addToCart(2)">Add to Cart</button>
+          </li>
+          <li>
+            <img src="product2.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Description of Product 2</p>
+            <p>Price: $29.99</p>
+            <button onclick="addToCart(2)">Add to Cart</button>
+          </li>
+        <!-- Add more product items here -->
+      </ul>
+    <section id="cart">
+      <h2>Cart</h2>
+      <ul id="cartItems">
+        <!-- Cart items will be dynamically added here -->
+      </ul>
+      <p id="total">Total: $0.00</p>
+      <button onclick="checkout()">Checkout</button>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>If you have any questions or concerns, please feel free to contact us.</p>
+      <form id = "details">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+</main>
+<script>
+  let cartItems = [];
+  let total = 0;
+  function addToCart(itemId) {
+  switch(itemId) {
+    case 1:
+      cartItems.push({ name: 'Product 1', price: 19.99 });
+      break;
+    case 2:
+      cartItems.push({ name: 'Product 2', price: 29.99 });
+      break;
+    case 3:
+      cartItems.push({ name: 'Service 1', price: 49.99 });
+      break;
+    case 4:
+      cartItems.push({ name: 'Service 2', price: 59.99 });
+      break;
+    // Add more cases for more items
+  }
+
+  updateCart();
+}
+
+function updateCart() {
+  let cartItemsList = document.getElementById('cartItems');
+  cartItemsList.innerHTML = '';
+
+  total = 0;
+
+  cartItems.forEach(item => {
+    let listItem = document.createElement('li');
+    let itemName = document.createElement('span');
+    let itemPrice = document.createElement('span');
+
+    itemName.innerText = item.name;
+    itemPrice.innerText = '$' + item.price.toFixed(2);
+
+    listItem.appendChild(itemName);
+    listItem.appendChild(itemPrice);
+
+    cartItemsList.appendChild(listItem);
+
+    total += item.price;
+  });
+
+  let totalElement = document.getElementById('total');
+  totalElement.innerText = 'Total: $' + total.toFixed(2);
+}
+
+function checkout() {
+  if (cartItems.length === 0) {
+    alert('Your cart is empty!');
+  } else {
+    let confirmation = confirm('Are you sure you want to checkout? Total amount: $' + total.toFixed(2));
+    if (confirmation) {
+      alert('Thank you for your purchase!');
+      cartItems = [];
+      updateCart();
+    }
+  }
+}
+</script>
+</body>
+</html>

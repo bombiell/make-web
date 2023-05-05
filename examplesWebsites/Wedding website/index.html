@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>John and Jane's Wedding</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>John and Jane's Wedding</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#details">Details</a></li>
+        <li><a href="#photos">Photos</a></li>
+        <li><a href="#rsvp">RSVP</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>John and Jane met in college and have been inseparable ever since. They are excited to start their new life together as husband and wife!</p>
+    </section>
+
+    <section id="details" >
+      <h2>Wedding Details</h2>
+      <p>Join us on June 10th, 2023 at 4:00 PM at the beautiful Rose Garden in Central Park for our wedding ceremony and reception.</p>
+      <p>Address: 123 Main St, New York, NY 10001</p>
+      <p>Dress code: Semi-formal</p>
+    </section>
+
+    <section id="photos">
+      <h2>Photos</h2> 
+      <div id = "pictuers_">
+        <div>
+          <img src="download (1).jpeg" alt="Photo of John and Jane">
+        </div>
+        <div>
+          <img src="download.jpeg" alt="Photo of John and Jane">
+        </div>
+        <div>
+          <img src="WhatsApp Image 2023-03-16 at 12.08.02.jpeg" alt="Photo of John and Jane">
+        </div>
+      </div>
+    </section>
+
+    <section id="rsvp">
+      <h2>RSVP</h2>
+      <form action="submit.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="guests">Number of Guests:</label>
+        <select id="guests" name="guests" required>
+          <option value="">Select one</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5+">5+</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+
+        <button type="submit">RSVP</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; John and Jane's Wedding 2023</p>
+  </footer>
+</body>
+</html>
