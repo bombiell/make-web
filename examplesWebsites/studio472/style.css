@@ -19,6 +19,9 @@ header {
 	height: 50px;
 }
 
+.empty{
+	
+}
 nav ul {
 	list-style: none;
 	display: flex;
