@@ -19,8 +19,9 @@ header {
 }
 
 .logo img {
-	height: auto; 
+	height: auto;  
 	width: 10%;
+
 }
 
 nav ul {
@@ -114,14 +115,15 @@ p {
     height: 120vh;
 	width: 44%;
 	background-color: #ccc;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* .HomeMask {
-	height: 100vh;
-	width: 100%;
-    -webkit-mask-image: url(Selection-#1.png);
-    mask-image: url(Selection-#1.png);
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;    
-  } */
+.HomeMask {
+	-webkit-mask-image: url(logo-removebg-preview-modified.png);
+	mask-image: url(logo-removebg-preview-modified.png);
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;    
+  }
 /* home ------------------------------------------------------- */
