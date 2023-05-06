@@ -19,7 +19,8 @@ header {
 }
 
 .logo img {
-	height: 50px;
+	height: auto; 
+	width: 10%;
 }
 
 nav ul {
@@ -74,13 +75,13 @@ section {
 h2 {
 	color: white;
 	font-size: 5vh;
-	margin-bottom: 20px;
+	margin-bottom: 1%;
 }
 
 p {
 	color: white;
     font-size: 2vh;
-    padding: 0px 146px;
+    padding: 0px 20%;
     text-align: center;
 	line-height: 1.4;
 }
