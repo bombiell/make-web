@@ -90,7 +90,11 @@ h2 {
     font-size: 3vw;
     margin-bottom: 1%;
 }
-
+h3 {
+	color: white;
+    font-size: 3vw;
+    margin-bottom: 1%;
+}
 p {
 	color: white;
     font-size: 1.5vw;
@@ -99,7 +103,44 @@ p {
     line-height: 100%;
 }
 /* text ------------------------------------------------------- */
+/* photos ----------------------------------------------------- */
+#photos {
+	padding: 50px 0;
+	text-align: center;
 
+}
+.all-photos{
+	display: flex;
+	flex-direction: row;
+}
+.photo-section {
+	margin-bottom: 50px;
+
+
+  }
+  
+  .photo-section h3 {
+	font-size: 24px;
+	margin-bottom: 20px;
+  }
+  
+  .photo-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+  }
+  
+  .photo-grid img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+
+/* photos ----------------------------------------------------- */
 /* home ------------------------------------------------------- */
 #home {
 	margin-top: 3.4%;
