@@ -120,3 +120,29 @@ p {
     flex-direction: column;
 }
 /* home ------------------------------------------------------- */
+/* contacts --------------------------------------------------- */
+
+.contacts {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacts h3 {
+    text-align: center;
+}
+.contact-icons {
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    width: 40%;
+}
+.contact-icons a {
+	
+}
+.contact-icons img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* contacts --------------------------------------------------- */
