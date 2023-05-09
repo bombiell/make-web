@@ -9,7 +9,7 @@ header {
     margin-top: -3.4%;
     position: fixed;
     width: 100%;
-    height: 3%;
+    height: 7vh; /* Adjusted height */
     background-color: #464646;
     color: #fff;
     display: flex;
@@ -20,9 +20,11 @@ header {
 }
 
 .logo img {
-    height: auto;
-    width: 10%;
+    height: auto;  
+    width: 15.5%; /* Fixed width */
+	/* Added max-width to prevent stretching */
 }
+
 
 nav ul {
     list-style: none;
