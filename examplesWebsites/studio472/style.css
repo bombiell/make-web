@@ -3,7 +3,18 @@ body {
     background-color: black;
     font-family: Arial, sans-serif;
 }
-
+    /* Hide the scroll bar */
+    ::-webkit-scrollbar {
+        display: none;
+      }
+      
+      /* Add some content and styles to demonstrate scrolling */
+      .scrollable-content {
+        padding-top: 2%;
+        height: 100vh;
+        overflow-y: scroll;
+      }
+      
 section {
 	height: 100vh;
 	display: flex;
@@ -14,7 +25,7 @@ section {
 
 /* header ----------------------------------------------------- */
 header {
-    margin-top: -3.4%;
+    /* margin-top: -2.4%; */
     position: fixed;
     width: 100%;
     height: 7vh; /* Adjusted height */
