@@ -215,3 +215,39 @@ p {
 }
 
 /* contacts --------------------------------------------------- */
+
+
+
+/* contacts --------------------------------------------------- */
+.album {
+	margin-bottom: 3%;
+}
+
+.album h3 {
+	color: white;
+	font-size: 2vw;
+	margin-bottom: 1%;
+}
+
+.album-photos {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.album-photos .photo {
+	margin: 1%;
+}
+
+.album-photos .photo img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	cursor: pointer;
+}
+
+/* Add your CSS for the image viewer (Windows file viewer style) here */
+
+
+
+/* contacts --------------------------------------------------- */
